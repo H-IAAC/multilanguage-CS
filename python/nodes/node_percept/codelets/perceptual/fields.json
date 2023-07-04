@@ -1,0 +1,1 @@
+{"broadcast": [], "inputs": [{"ip/port": "127.0.0.1:5000", "type": "tcp", "name": "sensory-memory", "group": []}], "enable": true, "name": "none", "lock": false, "threshold": 0.0, "timestep": 0.3, "activation": 0.0, "outputs": [{"ip/port": "127.0.0.1:5003", "type": "redis", "name": "perceptual-memory", "group": []}], "loop": true}
