@@ -20,6 +20,7 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 import time
+from typing import List
 
 #TODO: add the possibility of including groups
 # 'behavior sensory-memory@tcp@127.0.0.1:9998,sensory-memory@local@127.0.0.1:9998 motor-memory@aaaaa; .... '
@@ -128,7 +129,7 @@ def add_random_consumer(node_folder : str, ip_port_hostmode : str, number_of_fee
         add_node_to_system(node_folder, ip_port_hostmode, 'random_' + str(random.randint(0, 1000)), inputs)
 
 
-def add_multiple_random_consumers(node_folder : str, ip_port_hostmode_list_json : str, number_of_feeders_array : list[int],
+def add_multiple_random_consumers(node_folder : str, ip_port_hostmode_list_json : str, number_of_feeders_array : List[int],
                                   list_of_memories_json : str, number_of_nodes : int):
     '''
     Adds multiple random consumers to the system
@@ -150,7 +151,7 @@ def add_multiple_random_consumers(node_folder : str, ip_port_hostmode_list_json 
 
 
 # TODO: test
-def add_multiple_scale_consumers(node_folder : str, ip_port_hostmode_list_json : str, number_of_feeders_array : list[int],
+def add_multiple_scale_consumers(node_folder : str, ip_port_hostmode_list_json : str, number_of_feeders_array : List[int],
                                   list_of_memories_json : str, number_of_nodes : int):
     '''
     Adds multiple scale consumers to the system
@@ -208,7 +209,7 @@ def get_codelet_info(host : str, port : str, codelet_name : str) -> dict:
     return dct.get_codelet_info(host, port, codelet_name)
 
 
-def get_all_codelets_infos(list_of_codelets : list[list[str]]) -> list[dict]:
+def get_all_codelets_infos(list_of_codelets : List[List[str]]) -> List[dict]:
     '''
     Gets the info of all codelets
         :param list_of_codelets: the list of codelets with the host, port and name
@@ -233,7 +234,7 @@ def get_node_info(host : str, port : str) -> dict:
     return dct.get_node_info(host, port)
 
 
-def get_all_nodes_infos(list_of_ips : list[str]) -> list[dict]:
+def get_all_nodes_infos(list_of_ips : List[str]) -> List[dict]:
     '''
     Gets the info of all nodes
         :param list_of_ips: the list of ips of the nodes
@@ -247,7 +248,7 @@ def get_all_nodes_infos(list_of_ips : list[str]) -> list[dict]:
     return answer
 
 
-def create_matrix(list_of_nodes_infos : list[dict]) -> list[list[int]]:
+def create_matrix(list_of_nodes_infos : List[dict]) -> List[List[int]]:
     '''
     Creates a matrix with the connections between nodes
         :param list_of_nodes_infos: the list of nodes with their info
@@ -283,7 +284,7 @@ def create_matrix(list_of_nodes_infos : list[dict]) -> list[list[int]]:
     return matrix
 
 
-def draw_network(list_of_ips : list[str], graph_name : str):
+def draw_network(list_of_ips : List[str], graph_name : str):
     '''
     Draws the network
         :param list_of_ips: the list of ips of the nodes

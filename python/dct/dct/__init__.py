@@ -20,12 +20,13 @@ from dct import codelets
 #from dct import parser
 from dct import server
 from dct import utils
+from typing import List
 
 __version__ = '0.1.0'
 __author__ = 'Wandemberg Gibaut'
 
 
-def get_memory_object(memory_name : str, ip_port : str, conn_type : str) -> list[dict]:
+def get_memory_object(memory_name : str, ip_port : str, conn_type : str) -> List[dict]:
     '''
     Get a memory object given its name, ip/port and type
         :param memory_name: name of the memory object
@@ -67,7 +68,7 @@ def set_memory_object(memory_name : str, ip_port : str, conn_type : str, field :
     return -1
 
 
-def get_memory_objects_by_name(root_codelet_dir : str, memory_name : str, inputOrOutput : str) -> list[dict]:
+def get_memory_objects_by_name(root_codelet_dir : str, memory_name : str, inputOrOutput : str) -> List[dict]:
     '''
     Get a memory object given its name
         :param root_codelet_dir: root directory of the codelet
@@ -108,7 +109,7 @@ def set_memory_objects_by_name(root_codelet_dir : str, memory_name : str, field 
         return 0
 
 
-def get_memory_objects_by_group(root_codelet_dir : str, group : str, inputOrOutput : str) -> list[dict]:
+def get_memory_objects_by_group(root_codelet_dir : str, group : str, inputOrOutput : str) -> List[dict]:
     '''
     Get memory objects given their group
         :param root_codelet_dir: root directory of the codelet
@@ -149,7 +150,7 @@ def set_memory_objects_by_group(root_codelet_dir : str, group : str, field : str
         return 0
 
 
-def get_all_memory_objects(root_codelet_dir : str, inputOrOutput : str) -> list[dict]:
+def get_all_memory_objects(root_codelet_dir : str, inputOrOutput : str) -> List[dict]:
     '''
     Get all memory objects
         :param root_codelet_dir: root directory of the codelet
