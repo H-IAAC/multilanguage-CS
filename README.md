@@ -36,4 +36,4 @@ The figure below illustrates the Agent's topology.
 
 ### Why Janus?
 
-According to [Wikipedia](https://en.wikipedia.org/wiki/Janus), is the god of beginnings, gates, transitions, time, duality, doorways, passages, frames, and endings. He is usually depicted as having two faces. Also, Janus presided over the beginning and ending of conflict, and hence war and peace. As a god of transitions, he had functions pertaining to birth and to journeys and exchange. The month of January is named for Janus (Ianuarius)
+According to [Wikipedia](https://en.wikipedia.org/wiki/Janus), Janus is the god of beginnings, gates, transitions, time, duality, doorways, passages, frames, and endings. He is usually depicted as having two faces. Also, Janus presided over the beginning and ending of conflict, and hence war and peace. As a god of transitions, he had functions pertaining to birth and to journeys and exchange. The month of January is named for Janus (Ianuarius)
