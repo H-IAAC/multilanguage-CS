@@ -1,4 +1,4 @@
-# multilanguage-CS
+# Janus, a multilanguage Cognitive System
 
 This repo contains a simple use case integrating [CST](https://github.com/CST-Group/cst) and [DCT](https://github.com/wandgibaut/dct), having and information flow from (DCT) Codelets in Python to (CST) Codelets in Java.
 
